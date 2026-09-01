@@ -3,389 +3,439 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Yücel Dijital · Şanlıurfa'da bir gün</title>
-<meta name="description" content="Web sitesi, mobil uygulama, karekod menü, e-ticaret ve otomasyon. Şanlıurfa merkezli, Türkiye'nin her yerine. Kurar, teslim eder, anahtarını veririz.">
-<meta name="theme-color" content="#0B1220">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B1220'/><path d='M9 8h4l3 6 3-6h4l-5 9v7h-4v-7z' fill='%23E8A951'/></svg>">
+<title>Yücel Dijital | Web Sitesi, Mobil Uygulama, Karekod Menü, E-Ticaret</title>
+<meta name="description" content="Yücel Dijital: işletmeler için web sitesi, mobil uygulama, karekod menü, e-ticaret ve otomasyon çözümleri. Şanlıurfa merkezli, Türkiye geneline hizmet. Aidat yok, site sizin.">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B1F3A'/><path d='M9 8h4l3 6 3-6h4l-5 9v7h-4v-7z' fill='%23fff'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400..700&family=DM+Mono:wght@400&family=Caveat:wght@500&display=swap" rel="stylesheet">
-<meta property="og:title" content="Yücel Dijital · Şanlıurfa'da bir gün">
-<meta property="og:description" content="Web sitesi, mobil uygulama, karekod menü, e-ticaret ve otomasyon. Aidat yok, site sizin.">
-<meta property="og:image" content="https://rfibaba.github.io/yucel-dijital/assets/s6.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Yücel Dijital | İşletmeniz için dijital çözümler">
+<meta property="og:description" content="Web sitesi, mobil uygulama, karekod menü, e-ticaret ve otomasyon. Teslim tarihi yazılı, aidat yok, site sizin.">
+<meta property="og:image" content="https://rfibaba.github.io/yucel-dijital/assets/hero.jpg">
 <style>
 :root{
-  --night:#0B1220;--night2:#101A2B;--night3:#16223A;
-  --ivory:#F5F0E6;--ivory2:#DDD6C9;--ivory3:#ABA497;
-  --honey:#C9A46B;--amber:#E8A951;--amber-soft:rgba(232,169,81,.14);
-  --line:rgba(241,235,224,.14);--line2:rgba(241,235,224,.26);
-  --serif:"Fraunces",Georgia,serif;--sans:"Manrope",system-ui,sans-serif;--mono:"DM Mono",ui-monospace,monospace;--hand:"Caveat",cursive;
-  --e:cubic-bezier(.22,1,.36,1);
+  --navy:#0B1F3A;--navy2:#122B4F;--ink:#172033;--text:#2A3446;--muted:#5B6678;
+  --accent:#1D5BD6;--accent2:#1547A8;--accent-soft:#E8EFFC;
+  --bg:#FFFFFF;--surface:#F4F6FA;--line:#DDE3EC;--line2:#C9D2DE;
+  --ok:#0F9D58;
+  --head:"Plus Jakarta Sans",system-ui,sans-serif;--body:"Manrope",system-ui,sans-serif;
+  --r:16px;--shadow:0 10px 30px rgba(11,31,58,.08);--e:cubic-bezier(.22,1,.36,1);
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-html,body{overflow-x:hidden;overflow-x:clip}
-body{margin:0;background:var(--night);color:var(--ivory);font-family:var(--sans);font-size:18px;font-weight:450;line-height:1.7;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em;margin:0;font-variation-settings:"opsz" 144}
-h1 em,h2 em,h3 em,.em{font-style:italic;color:var(--amber);font-weight:400}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--head);color:var(--ink);margin:0;line-height:1.15;letter-spacing:-.015em;text-wrap:balance}
+h1{font-size:clamp(2.3rem,4.6vw,3.9rem);font-weight:800}
+h2{font-size:clamp(1.8rem,3.4vw,2.7rem);font-weight:800}
+h3{font-size:1.25rem;font-weight:700}
 p{margin:0}
-::selection{background:var(--amber);color:var(--night)}
-.wrap{width:min(1240px,90vw);margin-inline:auto}
-.k{font-family:var(--mono);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber)}
-.k::before{content:"";display:inline-block;width:26px;height:1px;background:var(--honey);vertical-align:middle;margin-right:12px}
-.hand{font-family:var(--hand);font-size:1.45rem;color:var(--amber);line-height:1.2;transform:rotate(-2deg);display:inline-block}
-.stamp{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--honey);border:1px solid var(--honey);border-radius:999px;padding:8px 14px;transform:rotate(-6deg);opacity:.85}
-:focus-visible{outline:2px solid var(--amber);outline-offset:4px}
-.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--amber);color:var(--night);padding:12px 18px}
+a{color:var(--accent)}
+img{max-width:100%;display:block}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1200px,92vw);margin-inline:auto}
+.eyebrow{display:inline-block;font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:60ch}
+.sh{max-width:760px;margin-bottom:48px}
+.sh .lead{margin-top:14px}
+.center{text-align:center;margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:12px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:all .25s var(--e);cursor:pointer;font-family:inherit;min-height:48px}
+.btn.p{background:var(--accent);color:#fff}
+.btn.p:hover{background:var(--accent2);transform:translateY(-1px)}
+.btn.s{background:#fff;color:var(--ink);border-color:var(--line2)}
+.btn.s:hover{border-color:var(--ink)}
+.btn.w{background:#fff;color:var(--navy)}
+.btn.w:hover{background:#EEF2F8}
+.btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.btn.o:hover{border-color:#fff}
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--accent);color:#fff;padding:12px 18px}
 .skip:focus{left:12px;top:12px}
-body::after{content:"";position:fixed;inset:0;z-index:3;pointer-events:none;opacity:.025;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E")}
+section{padding:clamp(72px,9vw,112px) 0}
+section.alt{background:var(--surface)}
+section.dark{background:var(--navy);color:#D6DEEA}
+section.dark h2,section.dark h3{color:#fff}
+section.dark .lead{color:#B9C5D8}
+section.dark .eyebrow{color:#8FB3FF}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--e),transform .7s var(--e)}
+.rv.in{opacity:1;transform:none}
 
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 0;transition:all .45s var(--e);border-bottom:1px solid transparent}
-.nav.on{padding:13px 0;background:rgba(11,18,32,.78);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-bottom-color:var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{font-family:var(--serif);font-weight:600;font-size:1.5rem;text-decoration:none;line-height:1}
-.logo i{font-style:normal;color:var(--amber)}
-.nav ul{display:flex;gap:32px;list-style:none;margin:0;padding:0}
-.nav ul a{text-decoration:none;font-size:.95rem;font-weight:500;color:var(--ivory);transition:color .25s}
-.nav ul a:hover{color:var(--ivory)}
-@media (max-width:980px){.nav ul{display:none}}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.92rem;border:1px solid var(--line2);color:var(--ivory);transition:all .35s var(--e)}
-.btn:hover{transform:translateY(-2px);border-color:var(--amber);color:var(--amber)}
-.btn.g{background:var(--amber);border-color:var(--amber);color:var(--night)}
-.btn.g:hover{background:#F2BD6B;color:var(--night)}
-.btn.sm{padding:10px 20px;font-size:.82rem}
-@media (pointer:coarse){.btn{min-height:46px}}
+/* nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--head);font-weight:800;font-size:1.3rem}
+.logo i{width:34px;height:34px;border-radius:9px;background:var(--navy);display:grid;place-items:center;color:#fff;font-style:normal;font-size:1.05rem}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:var(--text);font-weight:600;font-size:.95rem}
+.nav ul a:hover{color:var(--accent)}
+.nav .cta{display:flex;gap:10px;align-items:center}
+.nav .btn{padding:9px 18px;min-height:42px;font-size:.92rem;border-radius:10px}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line2);border-radius:10px;background:#fff;cursor:pointer;place-items:center}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);box-shadow:0 -6px 0 var(--ink),0 6px 0 var(--ink)}
+.mnav{display:none;background:#fff;border-bottom:1px solid var(--line);padding:12px 0 20px}
+.mnav.open{display:block}
+.mnav .wrap{display:block;height:auto}
+.mnav a{display:block;padding:12px 0;text-decoration:none;color:var(--ink);font-weight:600;border-bottom:1px solid var(--line)}
+@media (max-width:960px){.nav ul,.nav .cta .s{display:none}.burger{display:grid}}
 
-/* ===== THE FILM ===== */
-.film{position:relative;padding:0;height:100vh;height:100svh;overflow:hidden;background:var(--night)}
-.scene{position:absolute;inset:-6%;background-size:cover;background-position:center;opacity:0;will-change:transform,opacity}
-.scene.first{opacity:1}
-.scene::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,18,32,.55),rgba(11,18,32,.22) 40%,rgba(11,18,32,.6) 70%,rgba(11,18,32,.92) 100%)}
-.scene.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%}
-.vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 70% at 50% 50%,transparent 40%,rgba(11,18,32,.7) 100%)}
-.chap{position:absolute;left:0;right:0;bottom:12vh;opacity:0;pointer-events:none}
-.chap .wrap{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
-.chap .t{font-family:var(--mono);font-size:.88rem;letter-spacing:.22em;color:var(--amber);margin-bottom:18px;display:flex;align-items:center;gap:14px}
-.chap .t::before{content:"";width:34px;height:1px;background:var(--amber)}
-.chap h2{font-size:clamp(2rem,5vw,4.6rem);max-width:16ch;text-shadow:0 2px 24px rgba(11,18,32,.8)}
-.chap p{margin-top:16px;color:var(--ivory);max-width:44ch;font-size:1.12rem;text-shadow:0 1px 14px rgba(11,18,32,.9)}
-.chap .hand{margin-top:14px;pointer-events:auto}
-.tl{position:absolute;right:4vw;top:50%;transform:translateY(-50%);display:grid;gap:22px;z-index:5}
-.tl span{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;color:var(--ivory2);display:flex;align-items:center;gap:10px;transition:color .4s}
-.tl span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ivory3);transition:all .4s}
-.tl span.on{color:var(--amber)}.tl span.on::before{background:var(--amber);box-shadow:0 0 0 4px var(--amber-soft)}
-@media (max-width:820px){.tl{display:none}.chap .wrap{grid-template-columns:1fr}.chap{bottom:7vh}.ph{top:32%;right:6vw;width:min(240px,52vw);padding:8px;border-radius:30px}.ph .scr{min-height:0;padding:30px 14px 14px;border-radius:24px}.ph .hd{font-size:1.1rem}.ph .row{font-size:.8rem;padding:8px 2px}.notif{top:34%;width:min(300px,68vw)}.rep{bottom:auto;top:24%}}
-.intro{position:absolute;inset:0;display:grid;place-items:center;text-align:center;z-index:4;pointer-events:none;background:radial-gradient(ellipse 60% 55% at 50% 52%,rgba(11,18,32,.62),rgba(11,18,32,0) 100%)}
-.intro .k::before{display:none}
-.intro h1{font-size:clamp(2.6rem,6vw,5.8rem);margin-top:22px;text-shadow:0 2px 30px rgba(11,18,32,.85)}
-.intro p{margin-top:20px;color:var(--ivory);max-width:46ch;font-size:1.12rem;text-shadow:0 1px 14px rgba(11,18,32,.9)}
-.intro .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px;pointer-events:auto}
-.cue{position:absolute;left:50%;bottom:4vh;transform:translateX(-50%);z-index:5;font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;color:var(--ivory3);text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:10px}
-.cue i{width:1px;height:40px;background:linear-gradient(var(--amber),transparent);animation:cue 2.6s var(--e) infinite}
-@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-/* phone overlay inside film */
-.ph{position:absolute;right:8vw;top:50%;transform:translateY(-50%) rotate(-4deg);width:min(300px,60vw);opacity:0;z-index:4;border-radius:38px;padding:11px;background:linear-gradient(160deg,#1c2536,#0b101a);box-shadow:0 50px 100px rgba(0,0,0,.6),inset 0 0 0 1px rgba(255,255,255,.06)}
-.ph .scr{border-radius:30px;background:#FBF8F2;color:#17181A;padding:38px 18px 18px;min-height:420px;position:relative;overflow:hidden}
-.ph .scr::before{content:"";position:absolute;top:12px;left:50%;transform:translateX(-50%);width:70px;height:20px;border-radius:12px;background:#0b101a}
-.ph .hd{font-family:var(--serif);font-weight:600;font-size:1.3rem}
-.ph .hd i{font-style:italic;color:#B8985A}
-.ph .sb{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;color:#8A8E95;margin:2px 0 16px}
-.ph .row{display:flex;justify-content:space-between;padding:10px 2px;border-bottom:1px solid rgba(23,24,26,.1);font-size:.9rem}
-.ph .row b{font-family:var(--serif);color:#B8985A;font-weight:500}
-.ph .row.ed b{position:relative}
-.ph .row.ed b::after{content:"";position:absolute;inset:-4px -8px;border:1.5px solid #E8A951;border-radius:8px;animation:blink 1.6s infinite}
-@keyframes blink{50%{opacity:.2}}
-.ph .toast{margin-top:16px;padding:10px 12px;border-radius:10px;background:#17181A;color:#F1EBE0;font-size:.78rem;display:flex;gap:8px;align-items:center}
-.ph .toast::before{content:"";width:8px;height:8px;border-radius:50%;background:#25D366}
-.notif{position:absolute;left:6vw;top:50%;transform:translateY(-50%);width:min(340px,70vw);display:grid;gap:10px;opacity:0;z-index:4}
-.notif div{background:rgba(251,248,242,.96);color:#17181A;border-radius:16px;padding:14px 16px;box-shadow:0 20px 50px rgba(0,0,0,.4);font-size:.86rem;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;transform:translateX(40px);opacity:0}
-.notif i{width:34px;height:34px;border-radius:9px;background:#25D366;display:grid;place-items:center;color:#fff;font-style:normal;font-weight:700;font-size:.8rem}
-.notif b{display:block;font-weight:600;font-size:.86rem}
-.notif small{color:#55585E}
-.rep{position:absolute;left:5vw;bottom:14vh;z-index:4;opacity:0;display:grid;gap:6px}
-.rep b{font-family:var(--serif);font-size:clamp(3rem,7vw,6rem);line-height:1;color:var(--amber);font-variant-numeric:tabular-nums}
-.rep span{font-family:var(--mono);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ivory2)}
-
-/* ===== after the film ===== */
-section{position:relative;padding:clamp(90px,12vh,150px) 0}
-.sh{max-width:720px;margin-bottom:clamp(40px,6vh,70px)}
-.sh .k{display:block;margin-bottom:22px}
-.h2{font-size:clamp(2.3rem,4.8vw,4.2rem)}
-.lede{color:var(--ivory2);font-size:1.15rem;max-width:54ch;margin-top:20px}
-.rv{opacity:0;transform:translateY(26px)}
-
-/* editorial band with overlapping photos */
-.ed{padding-top:0}
-.ed .g{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,100px);align-items:center}
-.ed .pics{position:relative;height:min(78vh,640px)}
-.ed .pics img{position:absolute;object-fit:cover;border-radius:6px;box-shadow:0 40px 80px rgba(0,0,0,.5)}
-.ed .pics .a{left:0;top:0;width:68%;height:64%}
-.ed .pics .b{right:0;bottom:0;width:56%;height:56%;border:6px solid var(--night)}
-.ed .pics .cap{position:absolute;left:2%;bottom:6%;font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;color:var(--ivory2);text-transform:uppercase}
-.ed .pics .stamp{position:absolute;right:4%;top:6%}
-.ed .txt .hand{margin-top:22px}
-.big{font-family:var(--serif);font-weight:500;font-size:clamp(1.6rem,2.8vw,2.6rem);line-height:1.2}
-.big em{font-style:italic;color:var(--amber);font-weight:400}
-@media (max-width:900px){.ed .g{grid-template-columns:1fr}.ed .pics{height:60vw}}
+/* hero */
+.hero{padding:clamp(56px,7vw,96px) 0 0;background:linear-gradient(180deg,#F7F9FC,#fff 70%)}
+.hero .g{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero h1{margin:14px 0 20px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{max-width:52ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero .note{margin-top:14px;font-size:.92rem;color:var(--muted)}
+.mock{position:relative}
+.mock .pic{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:var(--surface)}
+.mock .pic img{width:100%;height:100%;object-fit:cover}
+.card{position:absolute;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 40px rgba(11,31,58,.14);padding:14px 16px;font-size:.92rem}
+.card b{display:block;font-family:var(--head);color:var(--ink);font-size:1.05rem}
+.card small{color:var(--muted)}
+.card.c1{left:-6%;bottom:14%}
+.card.c2{right:-4%;top:10%}
+.card.c3{right:6%;bottom:-6%;display:flex;gap:12px;align-items:center}
+.card .dot{width:10px;height:10px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(15,157,88,.15)}
+.card .num{font-family:var(--head);font-weight:800;font-size:1.6rem;color:var(--navy);line-height:1;font-variant-numeric:tabular-nums}
+@media (max-width:900px){.hero .g{grid-template-columns:1fr}.mock{margin:24px 4% 40px}.card.c1{left:-2%}.card.c2{right:-2%}}
+.trust{margin-top:clamp(48px,6vw,80px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust .wrap>div{padding:22px 18px;display:flex;gap:12px;align-items:center;border-right:1px solid var(--line)}
+.trust .wrap>div>div{display:block}
+.trust .wrap>div:last-child{border-right:0}
+.trust b{display:block;color:var(--ink);font-size:1rem}
+.trust span{font-size:.9rem;color:var(--muted)}
+.trust svg{flex:0 0 auto;color:var(--accent)}
+@media (max-width:900px){.trust .wrap{grid-template-columns:1fr 1fr}.trust .wrap>div:nth-child(2){border-right:0}.trust .wrap>div{border-bottom:1px solid var(--line)}}
+@media (max-width:560px){.trust .wrap{grid-template-columns:1fr}.trust .wrap>div{border-right:0;padding:16px 4px}}
+@media (max-width:700px){.cmp th,.cmp td{padding:12px 12px;font-size:.92rem}.cmp .total{font-size:1.1rem}}
 
 /* services */
-.svc ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line2)}
-.svc li{display:grid;grid-template-columns:60px 1.1fr 1fr;gap:clamp(18px,4vw,60px);padding:36px 0;border-bottom:1px solid var(--line);align-items:start;transition:padding .45s var(--e)}
-.svc li:hover{padding-left:14px}
-.svc .n{font-family:var(--serif);font-size:1.2rem;color:var(--honey);padding-top:4px}
-.svc h3{font-size:clamp(1.6rem,2.6vw,2.4rem)}
-.svc h3 small{display:block;font-family:var(--hand);font-size:1.3rem;color:var(--amber);font-weight:500;margin-top:6px;transform:rotate(-1.5deg);transform-origin:left}
-.svc li p{color:var(--ivory2)}
-@media (max-width:820px){.svc li{grid-template-columns:44px 1fr}.svc li p{grid-column:2}}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.s{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;transition:transform .3s var(--e),box-shadow .3s;display:flex;flex-direction:column;gap:14px}
+.s:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.s .ic{width:48px;height:48px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+.s p{color:var(--muted)}
+.s ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:.95rem}
+.s li{padding-left:20px;position:relative}
+.s li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.s.wide{grid-column:span 1}
+@media (max-width:960px){.svc{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.svc{grid-template-columns:1fr}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.w{padding:28px;border-radius:var(--r);background:var(--navy2);border:1px solid rgba(255,255,255,.08)}
+.w b{display:block;font-family:var(--head);font-size:2.2rem;color:#fff;line-height:1;margin-bottom:10px;font-variant-numeric:tabular-nums}
+.w h3{font-size:1.1rem;margin-bottom:8px}
+.w p{font-size:.95rem;color:#B9C5D8}
+@media (max-width:960px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.why{grid-template-columns:1fr}}
 
 /* sectors */
-.sect .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.sc{border:1px solid var(--line);border-radius:18px;padding:clamp(28px,3.4vw,46px);background:linear-gradient(160deg,var(--night3),var(--night2));min-height:320px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .5s var(--e),border-color .4s}
-.sc:hover{transform:translateY(-6px);border-color:var(--honey)}
-.sc .k{margin-bottom:20px}
-.sc h3{font-size:clamp(1.6rem,2.5vw,2.3rem);margin-bottom:14px}
-.sc .q{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--ivory2);margin-bottom:14px}
-.sc p{color:var(--ivory2);font-size:1.02rem}
-@media (max-width:820px){.sect .grid{grid-template-columns:1fr}.sc{min-height:auto}}
+.sec{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.k{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.k .im{aspect-ratio:4/3;background:var(--surface);overflow:hidden}
+.k .im img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--e)}
+.k:hover .im img{transform:scale(1.04)}
+.k .b{padding:22px 22px 24px;display:grid;gap:10px}
+.k p{color:var(--muted);font-size:.95rem}
+.k ul{margin:4px 0 0;padding:0;list-style:none;display:grid;gap:5px;font-size:.92rem;color:var(--text)}
+.k li::before{content:"✓";color:var(--ok);font-weight:700;margin-right:8px}
+@media (max-width:1000px){.sec{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.sec{grid-template-columns:1fr}}
+
+/* process */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.st{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.st .n{width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;font-family:var(--head);font-weight:800;display:grid;place-items:center;margin-bottom:16px}
+.st p{color:var(--muted);font-size:.95rem;margin-top:8px}
+.st small{display:block;margin-top:12px;font-weight:700;color:var(--accent);font-size:.85rem}
+@media (max-width:960px){.proc{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.proc{grid-template-columns:1fr}}
+
+/* demo */
+.demo .g{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center}
+.phone{width:min(320px,86vw);margin-inline:auto;border-radius:40px;background:#0B1F3A;padding:12px;box-shadow:0 30px 60px rgba(11,31,58,.25)}
+.phone .scr{background:#fff;border-radius:30px;overflow:hidden;min-height:560px;display:flex;flex-direction:column}
+.phone .top{padding:22px 18px 12px;border-bottom:1px solid var(--line)}
+.phone .top b{font-family:var(--head);font-size:1.15rem;color:var(--ink)}
+.phone .top span{display:block;font-size:.8rem;color:var(--muted)}
+.cats{display:flex;gap:8px;padding:12px 18px;overflow:auto}
+.cats button{border:1px solid var(--line2);background:#fff;border-radius:999px;padding:7px 14px;font:inherit;font-size:.85rem;font-weight:600;cursor:pointer;white-space:nowrap}
+.cats button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+#items{list-style:none;margin:0;padding:6px 18px 14px;display:grid;gap:0}
+#items li{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+#items li b{font-family:var(--head);color:var(--accent);font-variant-numeric:tabular-nums;font-weight:700}
+#items li b.flash{animation:flash 1s}
+@keyframes flash{0%{background:#FFF3C4}100%{background:transparent}}
+.phone .toast{margin:auto 18px 18px;padding:10px 12px;border-radius:10px;background:var(--navy);color:#fff;font-size:.85rem;display:flex;gap:8px;align-items:center;opacity:0;transition:opacity .3s}
+.phone .toast.show{opacity:1}
+.phone .toast::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.demo .txt ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.demo .txt li{display:flex;gap:12px;align-items:flex-start}
+.demo .txt li svg{flex:0 0 auto;margin-top:3px;color:var(--ok)}
+.demo .txt .btn{margin-top:26px}
+@media (max-width:900px){.demo .g{grid-template-columns:1fr}}
 
 /* packages */
-.pkg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.p{border:1px solid var(--line);border-radius:18px;padding:clamp(28px,3vw,42px);background:var(--night2);display:flex;flex-direction:column;position:relative;transition:transform .5s var(--e),border-color .4s}
-.p:hover{transform:translateY(-6px);border-color:var(--honey)}
-.p.f{background:linear-gradient(170deg,rgba(232,169,81,.18),var(--night2) 50%);border-color:var(--honey)}
-.p .tag{position:absolute;top:22px;right:22px}
-.p .k{margin-bottom:12px}
-.p h3{font-size:clamp(1.8rem,2.5vw,2.4rem);margin-bottom:8px}
-.p .d{color:var(--ivory2);margin-bottom:24px}
-.p ul{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:11px}
-.p li{padding-left:22px;position:relative;color:var(--ivory2);font-size:1rem}
-.p li::before{content:"";position:absolute;left:0;top:.65em;width:10px;height:1px;background:var(--honey)}
-.p .pr{margin-top:auto;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.p .pr b{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,3.2vw,3rem);font-variant-numeric:tabular-nums}
-.p .pr span{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory3)}
-.p .tm{margin-top:10px;font-family:var(--mono);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ivory3)}
-.p .btn{margin-top:26px;justify-content:center}
-.fine{margin-top:26px;color:var(--ivory2);font-size:.95rem;max-width:70ch}
-@media (max-width:960px){.pkg{grid-template-columns:1fr}}
+.pk{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.p{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px 28px;display:flex;flex-direction:column;position:relative}
+.p.f{border:2px solid var(--accent);box-shadow:var(--shadow)}
+.p .tag{position:absolute;top:-14px;left:28px;background:var(--accent);color:#fff;font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:999px;letter-spacing:.04em}
+.p h3{font-size:1.4rem}
+.p .for{color:var(--muted);margin:6px 0 18px;font-size:.95rem}
+.p .pr{font-family:var(--head);font-weight:800;font-size:2.4rem;color:var(--navy);line-height:1;font-variant-numeric:tabular-nums}
+.p .pr small{font-family:var(--body);font-weight:600;font-size:.85rem;color:var(--muted);margin-left:6px}
+.p .tm{margin-top:8px;font-size:.9rem;color:var(--muted)}
+.p ul{margin:22px 0 26px;padding:22px 0 0;border-top:1px solid var(--line);list-style:none;display:grid;gap:10px;font-size:.95rem}
+.p li{padding-left:26px;position:relative}
+.p li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+.p .btn{margin-top:auto}
+.fine{margin-top:22px;font-size:.92rem;color:var(--muted);max-width:80ch}
+@media (max-width:960px){.pk{grid-template-columns:1fr}}
 
-/* compare */
-.cmp .g{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.cb{border-radius:18px;padding:clamp(32px,4vw,56px);min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line);background:var(--night2)}
-.cb.good{background:linear-gradient(160deg,rgba(232,169,81,.2),var(--night2) 55%);border-color:var(--honey)}
-.cb .k{margin-bottom:auto}
-.cb .big2{font-family:var(--serif);font-weight:500;font-size:clamp(3rem,6vw,5.4rem);line-height:1;margin:30px 0 12px;font-variant-numeric:tabular-nums}
-.cb.bad .big2{color:var(--ivory2)}.cb.good .big2{color:var(--amber)}
-.cb p{color:var(--ivory2);max-width:36ch}
-@media (max-width:820px){.cmp .g{grid-template-columns:1fr}.cb{min-height:auto}}
+/* compare table */
+.cmp table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.cmp th,.cmp td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.cmp tr:last-child td{border-bottom:0}
+.cmp th{background:var(--surface);font-family:var(--head);font-size:.95rem;color:var(--ink)}
+.cmp th:nth-child(3),.cmp td:nth-child(3){background:var(--accent-soft)}
+.cmp td:first-child{font-weight:700;color:var(--ink)}
+.cmp .bad{color:#B42318}.cmp .good{color:var(--ok);font-weight:700}
+.cmp .tbl{overflow-x:auto}
+.cmp .total{font-family:var(--head);font-weight:800;font-size:1.3rem;font-variant-numeric:tabular-nums}
 
-/* promises + faq */
-.pl{list-style:none;margin:0;padding:0;border-top:1px solid var(--line2)}
-.pl li{display:grid;grid-template-columns:60px 1fr 1.2fr;gap:clamp(18px,4vw,60px);align-items:baseline;padding:28px 0;border-bottom:1px solid var(--line);transition:padding .45s var(--e)}
-.pl li:hover{padding-left:12px}
-.pl .n{font-family:var(--serif);color:var(--honey);font-size:1.15rem}
-.pl h3{font-size:clamp(1.4rem,2.3vw,2.1rem)}
-.pl p{color:var(--ivory2)}
-@media (max-width:760px){.pl li{grid-template-columns:44px 1fr}.pl p{grid-column:2}}
-.faq .g{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(30px,5vw,90px)}
+/* faq */
+.faq .g{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
 details{border-bottom:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:18px;font-family:var(--serif);font-weight:500;font-size:1.3rem;transition:color .3s}
+summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;justify-content:space-between;align-items:center;gap:18px;font-family:var(--head);font-weight:700;font-size:1.05rem;color:var(--ink)}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-family:var(--serif);font-size:1.5rem;color:var(--amber);flex:0 0 auto;transition:transform .4s var(--e)}
+summary::after{content:"+";font-size:1.4rem;color:var(--accent);flex:0 0 auto;transition:transform .3s}
 details[open] summary::after{transform:rotate(45deg)}
-summary:hover{color:var(--amber)}
-.ans{padding:0 0 22px;color:var(--ivory2);max-width:60ch}
+.ans{padding:0 0 18px;color:var(--muted);max-width:60ch}
 @media (max-width:820px){.faq .g{grid-template-columns:1fr}}
 
-/* cta */
-.cta{min-height:90vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:18vh 0}
-.cta .bg{position:absolute;inset:-8% 0;background:url(assets/s6.jpg) 50% 50%/cover no-repeat;opacity:.42}
-.cta::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(11,18,32,.55),rgba(11,18,32,.97))}
-.cta .wrap{position:relative;z-index:2}
-.cta .k::before{display:none}
-.cta .h2{font-size:clamp(3rem,8vw,7.5rem);margin-top:22px}
-.cta .sub{margin:26px auto 0;max-width:46ch;color:var(--ivory2);font-size:1.08rem}
-.cta .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:40px}
-.cta form{margin:60px auto 0;max-width:600px;display:grid;gap:12px;text-align:left}
-.cta label{font-family:var(--mono);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ivory3);display:block;margin-bottom:8px}
-.cta input,.cta textarea{width:100%;padding:16px 18px;border-radius:14px;border:1px solid var(--line2);background:rgba(241,235,224,.05);color:var(--ivory);font:inherit;font-size:1rem;transition:border-color .3s}
-.cta input:focus,.cta textarea:focus{border-color:var(--amber);outline:none}
-.cta textarea{min-height:120px;resize:vertical}
-button.btn{cursor:pointer;background:transparent;font-family:inherit}
-.cta .note{font-size:.92rem;color:var(--ivory2);text-align:center}
-.ok{display:none;padding:18px;border:1px solid var(--amber);border-radius:14px;color:var(--amber);text-align:center;margin-top:12px}
+/* contact */
+.contact .g{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,5vw,72px)}
+.info{display:grid;gap:14px;align-content:start}
+.info .row{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.info .row svg{flex:0 0 auto;color:var(--accent);margin-top:2px}
+.info b{display:block;color:var(--ink)}
+.info a{text-decoration:none;font-weight:700}
+.info span{color:var(--muted);font-size:.95rem}
+form{display:grid;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+label{font-weight:700;font-size:.9rem;color:var(--ink);display:block;margin-bottom:6px}
+input,textarea,select{width:100%;padding:13px 14px;border:1px solid var(--line2);border-radius:10px;font:inherit;font-size:1rem;color:var(--ink);background:#fff}
+input:focus,textarea:focus,select:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px rgba(29,91,214,.15)}
+textarea{min-height:120px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ok{display:none;padding:14px;border-radius:10px;background:#E6F6EC;color:#0B6B3A;font-weight:600}
 .ok.show{display:block}
-footer{padding:70px 0 40px;border-top:1px solid var(--line);background:var(--night2)}
-footer .top{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-bottom:50px}
-footer .bigl{font-family:var(--serif);font-weight:500;font-size:clamp(3rem,8vw,7rem);line-height:.95}
-footer .bigl i{font-style:normal;color:var(--amber)}
-footer .col{display:grid;gap:8px;font-size:.95rem;color:var(--ivory2);text-align:right}
-footer .col a{text-decoration:none}
-footer .col a:hover{color:var(--amber)}
-footer .bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;border-top:1px solid var(--line);font-size:.88rem;color:var(--ivory2)}
-@media (max-width:760px){footer .top{grid-template-columns:1fr}footer .col{text-align:left}}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  .rv{opacity:1;transform:none}
-  .film{height:auto}.scene{position:relative;inset:auto;height:70vh;opacity:1}.chap{position:relative;opacity:1;padding:40px 0}.intro{position:relative}.ph,.notif,.rep{opacity:1;position:relative;transform:none}.notif div{opacity:1;transform:none}
-}
+.fnote{font-size:.88rem;color:var(--muted)}
+@media (max-width:900px){.contact .g{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+
+footer{background:var(--navy);color:#B9C5D8;padding:56px 0 28px}
+footer .g{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+footer h4{color:#fff;font-size:1rem;margin-bottom:12px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.95rem}
+footer a{color:#B9C5D8;text-decoration:none}
+footer a:hover{color:#fff}
+footer .logo{color:#fff}
+footer .logo i{background:#fff;color:var(--navy)}
+footer .bot{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.88rem}
+@media (max-width:900px){footer .g{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){footer .g{grid-template-columns:1fr}}
+.wa{position:fixed;right:18px;bottom:18px;z-index:90;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.2);color:#fff}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">İçeriğe geç</a>
-<nav class="nav"><div class="wrap"><a class="logo" href="#top">Yücel<i>.</i></a><ul><li><a href="#hizmet">Hizmetler</a></li><li><a href="#sektor">Sektörler</a></li><li><a href="#paket">Paketler</a></li><li><a href="#sss">Sorular</a></li></ul><a class="btn g sm" href="https://wa.me/905423968527" rel="noopener">WhatsApp'tan yaz</a></div></nav>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top"><i>Y</i>Yücel Dijital</a>
+    <ul><li><a href="#hizmetler">Hizmetler</a></li><li><a href="#sektorler">Sektörler</a></li><li><a href="#surec">Süreç</a></li><li><a href="#paketler">Paketler</a></li><li><a href="#sss">SSS</a></li><li><a href="#iletisim">İletişim</a></li></ul>
+    <div class="cta"><a class="btn s" href="tel:+905423968527">0542 396 85 27</a><a class="btn p" href="#iletisim">Teklif Alın</a><button class="burger" aria-label="Menü" aria-expanded="false" id="burger"><span></span></button></div>
+  </div>
+  <nav class="mnav" id="mnav"><div class="wrap"><a href="#hizmetler">Hizmetler</a><a href="#sektorler">Sektörler</a><a href="#surec">Süreç</a><a href="#paketler">Paketler</a><a href="#sss">SSS</a><a href="#iletisim">İletişim</a><a href="tel:+905423968527">0542 396 85 27</a></div></nav>
+</header>
 
 <main id="main">
-<section class="film" id="top" aria-label="Şanlıurfa'da bir gün">
-  <div class="scene first" style="background-image:url(assets/s1.jpg)"></div>
-  <div class="scene" style="background-image:url(assets/s2.jpg)"></div>
-  <div class="scene" style="background-image:url(assets/s3.jpg)"></div>
-  <div class="scene" style="background-image:url(assets/s4.jpg)"></div>
-  <div class="scene" style="background-image:url(assets/s5.jpg)"></div>
-  <div class="scene" style="background-image:url(assets/s6.jpg)"></div>
-  <div class="scene vid"><video id="hv" muted playsinline preload="none" poster="assets/hero-end.jpg"></video></div>
-  <div class="vig"></div>
-
-  <div class="intro">
-    <div class="wrap">
-      <span class="k">Şanlıurfa merkezli · Türkiye geneli</span>
-      <h1>Küçük bir dükkân,<br>internete <em>böyle</em> çıkar.</h1>
-      <p>Kaydırın. Bir kafenin bir gününü izleyeceksiniz. Sonunda ne yaptığımızı anlatmamıza gerek kalmayacak.</p>
-      <div class="ctas"><a class="btn g" href="https://wa.me/905423968527" rel="noopener">Ücretsiz görüşme</a><a class="btn" href="#hizmet">Filmi geç, siteye in</a></div>
-    </div>
-  </div>
-
-  <div class="chap" data-i="1"><div class="wrap"><div><div class="t">06:40</div><h2>Şehir uyanıyor.</h2><p>Şanlıurfa'da bir sabah. Taş ısınmadan, sokaklar dolmadan, bir kafe açılmaya hazırlanıyor.</p></div></div></div>
-  <div class="chap" data-i="2"><div class="wrap"><div><div class="t">08:15</div><h2>Kepenk açılıyor.</h2><p>Kahve fiyatı değişmiş. Eskiden bu, matbaaya gitmek ve iki gün beklemek demekti.</p><span class="hand">artık değil.</span></div></div></div>
-  <div class="chap" data-i="3"><div class="wrap"><div><div class="t">08:20</div><h2>Tek dokunuş.</h2><p>Fiyatı telefonundan değiştirdi. Anında yayına girdi. Kimseye sormadı, kimseyi beklemedi.</p></div></div></div>
-  <div class="chap" data-i="4"><div class="wrap"><div><div class="t">12:30</div><h2>Masadaki karekod.</h2><p>Müşteri okutuyor, menü açılıyor, siparişini veriyor. Baskı yok, bekleme yok, yanlış fiyat yok.</p></div></div></div>
-  <div class="chap" data-i="5"><div class="wrap"><div><div class="t">15:00</div><h2>Sipariş geldi.</h2><p>Mesaj olarak düştü. Ayrı bir cihaz, ayrı bir panel, ayrı bir şifre yok. Zaten kullandığı telefon.</p></div></div></div>
-  <div class="chap" data-i="6"><div class="wrap"><div><div class="t">19:30</div><h2>Günün raporu.</h2><p>Çay demlendi. Rapor kendi geldi. Kaç sipariş, kaç yeni müşteri, hangi ürün en çok satmış.</p></div></div></div>
-  <div class="chap" data-i="7"><div class="wrap"><div><div class="t">Gece</div><h2>Hepsini biz kurduk.<br><em>Anahtarını ona verdik.</em></h2><p>Aidat yok, komisyon yok, ortadan kaybolmak yok. Şanlıurfa'da kurulduk, Türkiye'nin her yerine çalışıyoruz.</p><span class="hand">sıra sende.</span></div></div></div>
-
-  <div class="ph" id="ph"><div class="scr"><div class="hd">Kahve <i>Molası</i></div><div class="sb">MENÜ · DÜZENLE</div><div class="row"><span>Türk kahvesi</span><b>45 ₺</b></div><div class="row ed"><span>Menengiç kahvesi</span><b id="edprice">55 ₺</b></div><div class="row"><span>Filtre kahve</span><b>60 ₺</b></div><div class="row"><span>Künefe</span><b>120 ₺</b></div><div class="toast">Kaydedildi · yayında</div></div></div>
-  <div class="notif" id="notif">
-    <div><i>WA</i><div><b>Masa 4 · Yeni sipariş</b><small>2 menengiç, 1 künefe · 230 ₺</small></div></div>
-    <div><i>WA</i><div><b>Masa 9 · Yeni sipariş</b><small>3 çay, 1 sütlaç · 145 ₺</small></div></div>
-    <div><i>WA</i><div><b>Paket · Yeni sipariş</b><small>2 filtre kahve · 120 ₺</small></div></div>
-  </div>
-  <div class="rep" id="rep"><b data-count="47">0</b><span>bugünkü sipariş</span></div>
-
-  <div class="tl" aria-hidden="true"><span>06:40</span><span>08:15</span><span>08:20</span><span>12:30</span><span>15:00</span><span>19:30</span><span>Gece</span></div>
-  <div class="cue" aria-hidden="true">Kaydırın<i></i></div>
-</section>
-
-<section class="ed">
+<section class="hero" id="top">
   <div class="wrap g">
-    <div class="pics rv"><img class="a" src="assets/s2.jpg" alt="Şanlıurfa'da taş sokakta bir kafe"><img class="b" src="assets/s4.jpg" alt="Masalarda karekod menü"><span class="cap">Şanlıurfa · eski şehir · kurulduğumuz yer</span><span class="stamp">Şanlıurfa · 2026</span></div>
-    <div class="txt rv"><span class="k">Kim</span><p class="big" style="margin-top:22px">Şanlıurfa'da kurulmuş, Türkiye'nin her yerine çalışan bir dijital atölyeyiz. Web sitesi, mobil uygulama, karekod menü, e-ticaret ve otomasyon. <em>Kurar, teslim eder, arkasında dururuz.</em></p><p class="lede">Filmdeki kafe Şanlıurfa'da. İstanbul'daki bir restoran, İzmir'deki bir klinik ya da Gaziantep'teki bir mağaza için de aynı işi yapıyoruz: görüşme telefonda ve ekranda olur, iş uzaktan teslim edilir. Yeni kurulduk, gizlemiyoruz. Elimizde uzun bir müşteri listesi yok; onun yerine bu site var. Baştan sona biz kurduk, hazır şablon kullanmadık.</p><span class="hand">beğenmediyseniz zaten aramazsınız :)</span></div>
+    <div>
+      <span class="eyebrow">Web · Mobil · Karekod Menü · E-Ticaret · Otomasyon</span>
+      <h1>İşletmeniz için <em>dijital çözümler.</em> Kurar, teslim eder, arkasında dururuz.</h1>
+      <p class="lead">Web sitesi, mobil uygulama, karekod menü, e-ticaret altyapısı ve iş otomasyonu. Teslim tarihi sözleşmede yazılı, aylık aidat yok, tüm haklar size ait. Şanlıurfa merkezli, Türkiye genelinde hizmet.</p>
+      <div class="ctas"><a class="btn p" href="#iletisim">Ücretsiz Görüşme Planlayın</a><a class="btn s" href="#paketler">Paketleri İnceleyin</a></div>
+      <p class="note">Görüşme ücretsizdir ve bağlayıcı değildir. Aynı gün dönüş yapılır.</p>
+    </div>
+    <div class="mock rv">
+      <div class="pic"><img src="assets/hero.jpg" alt="Modern bir çalışma masasında dizüstü bilgisayar ve telefon" width="1600" height="1200"></div>
+      <div class="card c2"><b>Karekod Menü</b><small>Fiyat güncellendi · anında yayında</small></div>
+      <div class="card c1"><span class="num" data-count="47">0</span><small>bugünkü sipariş bildirimi</small></div>
+      <div class="card c3"><span class="dot"></span><div><b>Site yayında</b><small>Teslim: söz verilen tarihte</small></div></div>
+    </div>
   </div>
-</section>
-
-<section class="svc" id="hizmet">
-  <div class="wrap">
-    <div class="sh rv"><span class="k">Hizmetler</span><h2 class="h2">Beş iş yapıyoruz, <em>hepsi</em> sizin kalıyor.</h2><p class="lede">Şifreler sizde, dosyalar sizde, aylık kesinti yok. Teslimde nasıl kullanılacağını gösteririz.</p></div>
-    <ol>
-      <li class="rv"><span class="n">01</span><h3>Web sitesi<small>müşterinin sizi bulacağı yer</small></h3><p>Telefonda ve bilgisayarda kusursuz açılır, Google'da çıkar, her sayfada WhatsApp butonu durur.</p></li>
-      <li class="rv"><span class="n">02</span><h3>Mobil uygulama<small>iPhone ve Android, tek işten</small></h3><p>Müşterinin telefonunda simgeniz durur, kampanyanızı bildirim olarak gönderirsiniz.</p></li>
-      <li class="rv"><span class="n">03</span><h3>Karekod menü<small>filmde gördüğünüz şey</small></h3><p>Masadaki karekod okutulur, menü açılır. Fiyatı siz değiştirirsiniz, anında yayına girer. Baskı yok, aidat yok.</p></li>
-      <li class="rv"><span class="n">04</span><h3>E-ticaret<small>komisyon kesen yok</small></h3><p>Ürünü koyarsınız, satarsınız. Sepet, ödeme, kargo takibi. Para doğrudan size gelir.</p></li>
-      <li class="rv"><span class="n">05</span><h3>Otomasyon<small>bir kere kur, kendi çalışsın</small></h3><p>Sipariş bildirimi, stok uyarısı, otomatik mesaj, günlük rapor. Elle yaptığınız iş kendi döner.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="sect" id="sektor">
-  <div class="wrap">
-    <div class="sh rv"><span class="k">Sektörler</span><h2 class="h2">Her iş kolunun derdi <em>başka.</em></h2><p class="lede">Filmde bir kafe vardı. Aynı hikâye dört iş kolunda başka türlü anlatılır.</p></div>
-    <div class="grid">
-      <article class="sc rv"><div><span class="k">Kafe · Restoran</span><h3>Menüyü bir daha bastırmayın.</h3><p class="q">"Her fiyat değişiminde yeniden bastırıyorum."</p></div><p>Karekod menü, masadan sipariş, rezervasyon. Fiyatı telefonunuzdan değiştirirsiniz.</p></article>
-      <article class="sc rv"><div><span class="k">Market · Mağaza</span><h3>Raftaki ürün internete çıksın.</h3><p class="q">"Ürünlerim sadece rafta duruyor."</p></div><p>Online satış, stok takibi, kampanya duyurusu. Sipariş WhatsApp'ınıza düşer.</p></article>
-      <article class="sc rv"><div><span class="k">Kuyumcu · Emlak · Oto</span><h3>Her ilanın kendi sayfası olsun.</h3><p class="q">"Elimdeki mal Instagram'da kayboluyor."</p></div><p>Vitrin sitesi ve galeri. Her ilan ayrı sayfa, tek tuşla WhatsApp'tan sorarlar.</p></article>
-      <article class="sc rv"><div><span class="k">Klinik · Diş · Güzellik</span><h3>Telefonunuz rahatlasın.</h3><p class="q">"Gün boyu telefon çalıyor, hepsi randevu."</p></div><p>Online randevu, hizmet ve fiyat listesi, Google'da üst sıralar. Randevu gece de gelir.</p></article>
+  <div class="trust">
+    <div class="wrap">
+      <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><div><b>Teslim tarihi yazılı</b><span>Gecikirse fark alınmaz</span></div></div>
+      <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg><div><b>Aidat yok</b><span>Tek ödeme, site sizin</span></div></div>
+      <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><div><b>Türkiye geneli</b><span>Uzaktan kurulum ve eğitim</span></div></div>
+      <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V6a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg><div><b>WhatsApp destek</b><span>Değişiklik bir mesaj uzağınızda</span></div></div>
     </div>
   </div>
 </section>
 
-<section class="pk" id="paket">
+<section id="hizmetler">
   <div class="wrap">
-    <div class="sh rv"><span class="k">Paketler</span><h2 class="h2">Üç paket, <em>hepsi açık.</em></h2><p class="lede">Ne aldığınız baştan yazılı. Sonradan çıkan kalem yok. Ödeme: yarısı başta, yarısı teslimde.</p></div>
-    <div class="pkg">
-      <article class="p rv"><span class="k">Başlangıç</span><h3>Tek sayfa</h3><p class="d">Görünmek isteyen her işletme buradan başlar.</p><ul><li>Tek sayfalık site, telefonda ve bilgisayarda kusursuz</li><li>İşletme bilgileri, hizmetler, harita, saatler</li><li>Her ekranda WhatsApp butonu</li><li>Google'da bulunacak kurulum</li></ul><div class="pr"><b>8.500 ₺</b><span>tek seferlik</span></div><div class="tm">Teslim · 4 iş günü</div><a class="btn" href="https://wa.me/905423968527?text=Merhaba%2C%20Ba%C5%9Flang%C4%B1%C3%A7%20paketi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." rel="noopener">Bu paketi sorun</a></article>
-      <article class="p f rv"><span class="stamp tag">En çok seçilen</span><span class="k">Standart</span><h3>Site + menü</h3><p class="d">Filmdeki kafenin paketi.</p><ul><li>Başlangıç'taki her şey</li><li>Çok sayfa: hakkımızda, hizmetler, galeri, iletişim</li><li>Karekod menü veya ürün galerisi</li><li>İçeriği kendiniz değiştirdiğiniz panel</li><li>WhatsApp'a düşen sipariş ve form</li></ul><div class="pr"><b>16.500 ₺</b><span>tek seferlik</span></div><div class="tm">Teslim · 10 iş günü</div><a class="btn g" href="https://wa.me/905423968527?text=Merhaba%2C%20Standart%20paketi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." rel="noopener">Bu paketi sorun</a></article>
-      <article class="p rv"><span class="k">Geniş</span><h3>Satış + uygulama</h3><p class="d">İşini internete taşımak isteyene.</p><ul><li>Standart'taki her şey</li><li>Online satış: sepet, ödeme, kargo</li><li>Ya da iPhone ve Android uygulama</li><li>Stok ve sipariş yönetimi</li><li>Otomasyon: bildirim, uyarı, rapor</li></ul><div class="pr"><b>34.000 ₺</b><span>başlangıç</span></div><div class="tm">Teslim · 4 haftadan</div><a class="btn" href="https://wa.me/905423968527?text=Merhaba%2C%20Geni%C5%9F%20paket%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." rel="noopener">Bu paketi sorun</a></article>
-    </div>
-    <p class="fine rv">Alan adı ve barındırma bu fiyatların dışındadır, bize değil sağlayıcıya ödenir, yılda birkaç yüz lira tutar.</p>
-  </div>
-</section>
-
-<section class="cmp">
-  <div class="wrap">
-    <div class="sh rv"><span class="k">Kirada mısınız, sahibi mi?</span><h2 class="h2">Aidat ödeyen hiçbir şeye <em>sahip olmaz.</em></h2></div>
-    <div class="g">
-      <div class="cb bad rv"><span class="k">Aidatlı karekod menü · 5 yıl</span><div class="big2"><span data-count="45000" data-fmt="tl">0 ₺</span></div><p>Ayda 750 ₺'den. Ödemeyi kestiğiniz gün menü kapanır. Elinizde hiçbir şey kalmaz.</p></div>
-      <div class="cb good rv"><span class="k">Bizim Standart paket · bir kere</span><div class="big2"><span data-count="16500" data-fmt="tl">0 ₺</span></div><p>Menü sizin olur. Kapanacak bir şey yok. Beş yılda 28.500 ₺ cebinizde kalır.</p></div>
+    <div class="sh rv"><span class="eyebrow">Hizmetlerimiz</span><h2>İşletmenizin ihtiyacına göre kurulan dijital altyapı</h2><p class="lead">Her çözüm teslimde çalışır durumda verilir, kullanımı gösterilir ve tüm erişim bilgileri size teslim edilir.</p></div>
+    <div class="svc">
+      <article class="s rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><h3>Kurumsal Web Sitesi</h3><p>Telefonda ve bilgisayarda kusursuz çalışan, Google'da bulunan, hızlı açılan web sitesi.</p><ul><li>Hizmet ve ürün sayfaları, galeri, iletişim</li><li>Google Haritalar ve arama uyumu</li><li>Her sayfada WhatsApp ve telefon butonu</li></ul></article>
+      <article class="s rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Mobil Uygulama</h3><p>iPhone ve Android için tek kod tabanından geliştirilen, mağazalarda yayınlanan uygulama.</p><ul><li>Bildirim ile kampanya duyurusu</li><li>Sipariş, randevu veya sadakat modülü</li><li>App Store ve Google Play yayını</li></ul></article>
+      <article class="s rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM19 14h2M14 19h2M19 19h2v2"/></svg></div><h3>Karekod Menü</h3><p>Masadaki karekod ile açılan dijital menü. Fiyatı panelden değiştirirsiniz, anında yayına girer.</p><ul><li>Kategori, ürün, fotoğraf ve alerjen bilgisi</li><li>Masadan sipariş ve garson çağırma</li><li>Baskı maliyeti ve aidat yok</li></ul></article>
+      <article class="s rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l2 12h11l2-8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg></div><h3>E-Ticaret</h3><p>Ürünlerinizi internetten satmanızı sağlayan, ödeme ve kargo entegrasyonlu satış altyapısı.</p><ul><li>Sanal POS ve kapıda ödeme</li><li>Stok, sipariş ve kargo takibi</li><li>Pazaryeri komisyonu yok</li></ul></article>
+      <article class="s rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></div><h3>İş Otomasyonu</h3><p>Elle yürüyen işleri sisteme bağlayan bildirim, raporlama ve entegrasyon çözümleri.</p><ul><li>Sipariş ve randevu bildirimi</li><li>Stok uyarısı ve günlük rapor</li><li>Muhasebe ve kargo entegrasyonu</li></ul></article>
+      <article class="s rv" style="background:var(--navy);border-color:var(--navy);color:#D6DEEA"><div class="ic" style="background:rgba(255,255,255,.12);color:#fff"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg></div><h3 style="color:#fff">Bakım ve Destek</h3><p style="color:#B9C5D8">Yayından sonra da yanınızdayız. İçerik güncellemesi, teknik bakım ve güvenlik takibi.</p><a class="btn w" href="#iletisim" style="margin-top:auto;align-self:flex-start">Destek Talebi</a></article>
     </div>
   </div>
 </section>
 
-<section class="prom">
+<section class="dark" id="neden">
   <div class="wrap">
-    <div class="sh rv"><span class="k">Neden biz</span><h2 class="h2">Beş söz <em>veriyoruz.</em></h2></div>
-    <ul class="pl">
-      <li class="rv"><span class="n">01</span><h3>Tarih yazılı verilir.</h3><p>Teslim gününü baştan yazıyoruz. Tutmazsa o gecikmenin parasını almıyoruz.</p></li>
-      <li class="rv"><span class="n">02</span><h3>Site sizin olur.</h3><p>Şifreler, dosyalar, alan adı hepsi sizde. İstediğiniz gün devredersiniz.</p></li>
-      <li class="rv"><span class="n">03</span><h3>Aidat yok.</h3><p>Aylık kesinti yapmıyoruz. Ödemeyi kestiğinizde kapanacak bir şeyiniz olmaz.</p></li>
-      <li class="rv"><span class="n">04</span><h3>Ulaşılabiliriz.</h3><p>Şanlıurfa'daysanız kapımız açık, gelip oturursunuz. Başka şehirdeyseniz telefon ve görüntülü görüşme; mesafe işi değiştirmez.</p></li>
-      <li class="rv"><span class="n">05</span><h3>Değişiklik bir mesaj.</h3><p>Site yayına girdikten sonra da yanınızdayız. Ne değişecekse yazarsınız, yaparız.</p></li>
-    </ul>
+    <div class="sh rv"><span class="eyebrow">Neden Yücel Dijital?</span><h2>Sözleşmede yazan, teslimde tutulan dört taahhüt</h2></div>
+    <div class="why">
+      <div class="w rv"><b>01</b><h3>Yazılı teslim tarihi</h3><p>Teslim günü sözleşmeye yazılır. Gecikme olursa gecikilen kısmın ücreti alınmaz.</p></div>
+      <div class="w rv"><b>02</b><h3>Tam sahiplik</h3><p>Alan adı, barındırma, panel ve kaynak dosyalar sizin adınıza. İstediğiniz gün devredersiniz.</p></div>
+      <div class="w rv"><b>03</b><h3>Aylık aidat yok</h3><p>Tek seferlik ücret. Ödeme kesildiğinde kapanan bir sistem olmaz.</p></div>
+      <div class="w rv"><b>04</b><h3>Sürekli destek</h3><p>Yayın sonrası değişiklik talepleri WhatsApp üzerinden alınır ve aynı gün planlanır.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="sektorler">
+  <div class="wrap">
+    <div class="sh rv"><span class="eyebrow">Sektörler</span><h2>Her sektörün ihtiyacına göre hazırlanmış çözümler</h2><p class="lead">Aynı altyapı, sektöre göre farklı modüllerle kurulur. Aşağıda en sık çalıştığımız dört iş kolu var.</p></div>
+    <div class="sec">
+      <article class="k rv"><div class="im"><img src="assets/sec-kafe.jpg" alt="Modern bir kafe salonu" loading="lazy"></div><div class="b"><h3>Kafe ve Restoran</h3><p>Menü değişiklikleri için yeniden baskı yapmayın.</p><ul><li>Karekod menü ve masadan sipariş</li><li>Rezervasyon ve paket sipariş</li><li>Google Haritalar yorum yönetimi</li></ul></div></article>
+      <article class="k rv"><div class="im"><img src="assets/sec-market.jpg" alt="Düzenli raflarıyla modern bir market" loading="lazy"></div><div class="b"><h3>Market ve Mağaza</h3><p>Raftaki ürünü internetten de satın.</p><ul><li>Online satış ve kapıda ödeme</li><li>Stok ve kampanya yönetimi</li><li>WhatsApp'a düşen sipariş bildirimi</li></ul></div></article>
+      <article class="k rv"><div class="im"><img src="assets/sec-vitrin.jpg" alt="Aydınlık bir kuyumcu vitrini" loading="lazy"></div><div class="b"><h3>Kuyumcu, Emlak, Oto Galeri</h3><p>Her ürün ve ilan için ayrı sayfa, tek tuşla iletişim.</p><ul><li>Vitrin sitesi ve ilan yönetimi</li><li>Fotoğraf galerisi ve fiyat listesi</li><li>WhatsApp ile hızlı teklif</li></ul></div></article>
+      <article class="k rv"><div class="im"><img src="assets/sec-klinik.jpg" alt="Modern bir klinik karşılama alanı" loading="lazy"></div><div class="b"><h3>Klinik, Diş, Güzellik</h3><p>Randevu telefonunuzu meşgul etmesin.</p><ul><li>Online randevu ve hatırlatma</li><li>Hizmet ve fiyat listesi</li><li>Google'da üst sıralar için kurulum</li></ul></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="surec">
+  <div class="wrap">
+    <div class="sh rv"><span class="eyebrow">Çalışma Sürecimiz</span><h2>Görüşmeden teslime dört adım</h2><p class="lead">Her adımın çıktısı bellidir. Ne zaman ne göreceğinizi baştan bilirsiniz.</p></div>
+    <div class="proc">
+      <div class="st rv"><div class="n">1</div><h3>İhtiyaç görüşmesi</h3><p>Telefonda veya görüntülü görüşmede işinizi dinleriz. Ne gerektiğini ve ne gerekmediğini birlikte netleştiririz.</p><small>Çıktı: yazılı teklif ve teslim tarihi</small></div>
+      <div class="st rv"><div class="n">2</div><h3>Tasarım onayı</h3><p>Ana sayfa tasarımını görürsünüz. Onay gelmeden kuruluma geçilmez.</p><small>Çıktı: onaylı tasarım</small></div>
+      <div class="st rv"><div class="n">3</div><h3>Kurulum ve içerik</h3><p>Sayfalar, panel, entegrasyonlar kurulur. İçerikler sizinle birlikte yerleştirilir.</p><small>Çıktı: test adresi</small></div>
+      <div class="st rv"><div class="n">4</div><h3>Teslim ve eğitim</h3><p>Site yayına alınır, paneli kullanmayı gösteririz. Tüm şifre ve dosyalar size teslim edilir.</p><small>Çıktı: yayında site ve teslim tutanağı</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt demo" id="demo">
+  <div class="wrap g">
+    <div class="rv"><div class="phone"><div class="scr"><div class="top"><b>Örnek Kafe</b><span>Dijital menü · canlı demo</span></div><div class="cats" id="cats"></div><ul id="items"></ul><div class="toast" id="toast">Fiyat güncellendi, yayında</div></div></div></div>
+    <div class="txt rv"><span class="eyebrow">Canlı Demo</span><h2>Karekod menü nasıl çalışır?</h2><p class="lead" style="margin-top:14px">Soldaki telefon gerçek bir menü. Kategorilere dokunun; "Fiyat güncelle" ile panelden yapılan bir değişikliğin müşteriye nasıl anında yansıdığını görün.</p>
+      <ul>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg><span>Müşteri masadaki karekodu okutur, uygulama indirmez.</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg><span>Fiyat ve ürün değişikliği panelden yapılır, baskı gerekmez.</span></li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg><span>Siparişler WhatsApp'a veya mutfak ekranına düşer.</span></li>
+      </ul>
+      <button class="btn p" id="upd" type="button">Fiyat güncelle</button>
+    </div>
+  </div>
+</section>
+
+<section id="paketler">
+  <div class="wrap">
+    <div class="sh rv"><span class="eyebrow">Paketler ve Fiyatlar</span><h2>Şeffaf fiyat, yazılı kapsam</h2><p class="lead">Kapsam sözleşmede madde madde yazılır. Sonradan çıkan ek kalem olmaz. Ödeme: yüzde 50 başlangıçta, yüzde 50 teslimde.</p></div>
+    <div class="pk">
+      <article class="p rv"><h3>Başlangıç</h3><p class="for">İnternette görünmek isteyen her işletme için</p><div class="pr">8.500 ₺<small>tek seferlik</small></div><div class="tm">Teslim: 4 iş günü</div><ul><li>Tek sayfalık kurumsal site</li><li>İşletme bilgileri, hizmetler, harita, çalışma saatleri</li><li>WhatsApp ve telefon butonu</li><li>Google Haritalar ve arama kurulumu</li><li>SSL ve mobil uyum</li></ul><a class="btn s" href="https://wa.me/905423968527?text=Merhaba%2C%20Ba%C5%9Flang%C4%B1%C3%A7%20paketi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." rel="noopener">Bilgi Alın</a></article>
+      <article class="p f rv"><span class="tag">En çok tercih edilen</span><h3>Standart</h3><p class="for">Çok sayfalı site ve karekod menü veya ürün kataloğu</p><div class="pr">16.500 ₺<small>tek seferlik</small></div><div class="tm">Teslim: 10 iş günü</div><ul><li>Başlangıç paketindeki her şey</li><li>Hakkımızda, hizmetler, galeri, iletişim sayfaları</li><li>Karekod menü veya ürün kataloğu</li><li>İçerik yönetim paneli ve eğitimi</li><li>WhatsApp'a düşen form ve sipariş</li><li>3 ay ücretsiz içerik güncelleme desteği</li></ul><a class="btn p" href="https://wa.me/905423968527?text=Merhaba%2C%20Standart%20paketi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." rel="noopener">Teklif Alın</a></article>
+      <article class="p rv"><h3>Geniş</h3><p class="for">Online satış veya mobil uygulama isteyen işletmeler için</p><div class="pr">34.000 ₺<small>başlangıç fiyatı</small></div><div class="tm">Teslim: 4 haftadan itibaren</div><ul><li>Standart paketindeki her şey</li><li>E-ticaret: sepet, sanal POS, kargo entegrasyonu</li><li>veya iPhone ve Android mobil uygulama</li><li>Stok ve sipariş yönetimi</li><li>Otomasyon: bildirim, uyarı, raporlama</li><li>6 ay ücretsiz destek</li></ul><a class="btn s" href="https://wa.me/905423968527?text=Merhaba%2C%20Geni%C5%9F%20paket%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." rel="noopener">Bilgi Alın</a></article>
+    </div>
+    <p class="fine rv">Alan adı ve barındırma ücretleri paket fiyatlarına dahil değildir; sağlayıcıya sizin adınıza ödenir ve yıllık birkaç yüz lira tutar. Mobil uygulama mağaza hesap ücretleri Apple ve Google tarafından ayrıca alınır.</p>
+  </div>
+</section>
+
+<section class="alt cmp">
+  <div class="wrap">
+    <div class="sh rv"><span class="eyebrow">Karşılaştırma</span><h2>Aidatlı sistem mi, kendi sisteminiz mi?</h2><p class="lead">Piyasadaki karekod menü ve site kiralama servisleriyle Standart paketimizin 5 yıllık karşılaştırması.</p></div>
+    <div class="tbl rv"><table>
+      <thead><tr><th>Kriter</th><th>Aidatlı servis</th><th>Yücel Dijital · Standart</th></tr></thead>
+      <tbody>
+        <tr><td>Aylık ücret</td><td>750 ₺ ve üzeri</td><td class="good">Yok</td></tr>
+        <tr><td>5 yıllık toplam maliyet</td><td class="total">45.000 ₺+</td><td class="total" style="color:var(--accent)">16.500 ₺</td></tr>
+        <tr><td>Ödeme kesilirse</td><td class="bad">Menü ve site kapanır</td><td class="good">Kapanacak bir şey yok</td></tr>
+        <tr><td>Sahiplik</td><td>Servis sağlayıcıda</td><td class="good">Sizde, devredilebilir</td></tr>
+        <tr><td>Tasarım</td><td>Hazır şablon</td><td class="good">İşletmenize özel</td></tr>
+        <tr><td>Değişiklik talebi</td><td>Destek bileti, günler</td><td class="good">WhatsApp, aynı gün</td></tr>
+      </tbody>
+    </table></div>
   </div>
 </section>
 
 <section class="faq" id="sss">
   <div class="wrap">
-    <div class="sh rv"><span class="k">Sorular</span><h2 class="h2">Herkesin sorduğu <em>şeyler.</em></h2></div>
+    <div class="sh rv"><span class="eyebrow">Sıkça Sorulan Sorular</span><h2>Karar vermeden önce bilmek istedikleriniz</h2></div>
     <div class="g">
       <div>
-        <details class="rv"><summary>Verdiğiniz tarihte teslim ediyor musunuz?</summary><p class="ans">Tarihi başta yazılı veriyoruz. Tutmazsa o gecikmenin parasını almıyoruz.</p></details>
-        <details class="rv"><summary>İş bitince kayboluyor musunuz?</summary><p class="ans">Hayır. Numara aşağıda, arayın. Şanlıurfa'daysanız kapıya da gelebilirsiniz.</p></details><details class="rv"><summary>Başka şehirdeyim, çalışır mıyız?</summary><p class="ans">Evet. Türkiye'nin her yerine çalışıyoruz. Görüşme telefonda ve ekranda olur, site uzaktan kurulur, teslimde kullanımı yine ekranda gösteririz.</p></details>
-        <details class="rv"><summary>Aylık ödeme var mı?</summary><p class="ans">Yok. Alan adı ve barındırma dışında bize aidat ödemezsiniz. O ikisi de bize değil, sağlayıcıya gider.</p></details>
-        <details class="rv"><summary>Site benim mi oluyor?</summary><p class="ans">Evet. Şifreler ve dosyalar sizde. İstediğiniz gün başka birine devredersiniz.</p></details>
-        <details class="rv"><summary>Ödeme nasıl oluyor?</summary><p class="ans">Yarısı başlangıçta, yarısı teslimde. Aradan başka kalem çıkmaz.</p></details>
+        <details class="rv"><summary>Teslim tarihine uyuluyor mu?</summary><p class="ans">Evet. Tarih sözleşmeye yazılır. Bizden kaynaklı gecikmede gecikilen kısmın ücreti alınmaz.</p></details>
+        <details class="rv"><summary>Başka şehirdeyim, çalışabilir miyiz?</summary><p class="ans">Türkiye'nin her yerine hizmet veriyoruz. Görüşme telefon veya görüntülü görüşmeyle yapılır, kurulum ve eğitim uzaktan tamamlanır.</p></details>
+        <details class="rv"><summary>Aylık ödeme var mı?</summary><p class="ans">Bize aylık ödeme yapmazsınız. Yalnızca alan adı ve barındırma ücreti sağlayıcıya yıllık olarak ödenir.</p></details>
+        <details class="rv"><summary>Site kime ait oluyor?</summary><p class="ans">Size. Alan adı, barındırma hesabı, panel ve kaynak dosyalar sizin adınıza kurulur ve teslim edilir.</p></details>
+        <details class="rv"><summary>Ödeme nasıl yapılıyor?</summary><p class="ans">Yüzde 50 başlangıçta, yüzde 50 teslimde. Havale, EFT veya kredi kartı ile ödenebilir, fatura kesilir.</p></details>
       </div>
       <div>
-        <details class="rv"><summary>Hiç bilgisayardan anlamıyorum.</summary><p class="ans">Anlamanız gereken bir kısım yok, o bizim işimiz. Siz sadece ne istediğinizi söylersiniz.</p></details>
-        <details class="rv"><summary>İçeriği sonradan kendim değiştirebilir miyim?</summary><p class="ans">Standart ve Geniş pakette evet, panelden. Filmde gördüğünüz gibi.</p></details>
-        <details class="rv"><summary>Google'da çıkar mıyım?</summary><p class="ans">Siteyi Google'ın bulacağı şekilde kuruyoruz ve işletmenizi Haritalar'a bağlıyoruz. İlk sıra sözü kimse veremez.</p></details>
-        <details class="rv"><summary>Fotoğraflarım yok, ne olacak?</summary><p class="ans">Sorun değil. Ya biz çekeriz ya da işinize uygun görselleri hazırlarız. Sonradan değiştirmek bir mesaj.</p></details>
-        <details class="rv"><summary>Ne kadar sürer?</summary><p class="ans">Tek sayfa birkaç gün. Menü bir gün. Uygulama ve e-ticaret daha uzun, tarihini konuşurken veririz.</p></details>
+        <details class="rv"><summary>Teknik bilgim yok, sorun olur mu?</summary><p class="ans">Olmaz. Teknik tarafı biz yönetiriz. Teslimde paneli birlikte kullanır, kısa bir eğitim veririz.</p></details>
+        <details class="rv"><summary>İçeriği sonradan kendim değiştirebilir miyim?</summary><p class="ans">Standart ve Geniş paketlerde panelden metin, fiyat, fotoğraf ve ürün değişikliğini kendiniz yapabilirsiniz.</p></details>
+        <details class="rv"><summary>Google'da çıkar mıyım?</summary><p class="ans">Site arama motorlarına uygun kurulur ve Google İşletme Profili ile bağlanır. Sıralama garantisi hiçbir firma veremez; doğru kurulum sağlarız.</p></details>
+        <details class="rv"><summary>Fotoğraf ve metinlerim yok, ne olacak?</summary><p class="ans">İçerikler birlikte hazırlanır. Fotoğraf çekimi veya sektöre uygun görsel hazırlığı teklife eklenebilir.</p></details>
+        <details class="rv"><summary>Yayından sonra destek alabilir miyim?</summary><p class="ans">Evet. Paketlere dahil destek süresi bittikten sonra da değişiklik talepleri iş bazında fiyatlanır, aylık zorunluluk yoktur.</p></details>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta" id="iletisim">
-  <div class="bg" aria-hidden="true"></div>
+<section class="contact" id="iletisim">
   <div class="wrap">
-    <span class="k">Ücretsiz · Bağlayıcı değil</span>
-    <h2 class="h2 rv">Konuşalım<em>.</em></h2>
-    <p class="sub rv">Ne lazım olduğunu anlatın, biz ne yapacağımızı ve ne zaman biteceğini söyleyelim. Bir şey satın almak zorunda değilsiniz.</p>
-    <div class="ctas rv"><a class="btn g" href="https://wa.me/905423968527" rel="noopener">WhatsApp'tan yaz · 0542 396 85 27</a></div>
-    <form id="f" class="rv">
-      <div><label for="ad">Ad soyad</label><input id="ad" name="ad" type="text" autocomplete="name" required></div>
-      <div><label for="tel">Telefon</label><input id="tel" name="tel" type="tel" autocomplete="tel" required></div>
-      <div><label for="ne">Ne yaptırmak istiyorsunuz?</label><textarea id="ne" name="ne" required></textarea></div>
-      <button class="btn g" type="submit" style="justify-content:center">Gönder</button>
-      <p class="note">Gönder'e bastığınızda WhatsApp açılır, mesajınız hazır gelir.</p>
-    </form>
-    <div class="ok" id="ok">WhatsApp'ı açtık, mesajınız hazır. Göndermeyi unutmayın.</div>
+    <div class="sh rv"><span class="eyebrow">İletişim</span><h2>Ücretsiz görüşme planlayın</h2><p class="lead">İhtiyacınızı yazın; aynı gün arayıp ne yapacağımızı, ne zaman biteceğini ve ücretini net olarak iletelim.</p></div>
+    <div class="g">
+      <div class="info rv">
+        <div class="row"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg><div><b>Telefon</b><a href="tel:+905423968527">0542 396 85 27</a><br><span>Hafta içi ve hafta sonu ulaşılabilir</span></div></div>
+        <div class="row"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V6a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg><div><b>WhatsApp</b><a href="https://wa.me/905423968527" rel="noopener">Mesaj gönderin</a><br><span>En hızlı dönüş kanalı</span></div></div>
+        <div class="row"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.6 7-12a7 7 0 1 0-14 0c0 4.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Merkez</b><span>Şanlıurfa · Türkiye genelinde uzaktan hizmet</span></div></div>
+      </div>
+      <form id="f" class="rv" novalidate>
+        <div class="two"><div><label for="ad">Ad Soyad</label><input id="ad" name="ad" autocomplete="name" required></div><div><label for="tel">Telefon</label><input id="tel" name="tel" type="tel" autocomplete="tel" required></div></div>
+        <div class="two"><div><label for="isl">İşletme adı</label><input id="isl" name="isl" autocomplete="organization"></div><div><label for="hiz">İlgilendiğiniz hizmet</label><select id="hiz" name="hiz"><option>Web sitesi</option><option>Mobil uygulama</option><option>Karekod menü</option><option>E-ticaret</option><option>Otomasyon</option><option>Henüz karar vermedim</option></select></div></div>
+        <div><label for="msg">Kısaca ihtiyacınız</label><textarea id="msg" name="msg" placeholder="Örn. Kafemiz için karekod menü ve tek sayfalık site istiyoruz."></textarea></div>
+        <button class="btn p" type="submit">Görüşme Talebi Gönder</button>
+        <p class="fnote">Gönder'e bastığınızda WhatsApp açılır ve mesajınız hazır gelir. Bilgileriniz üçüncü kişilerle paylaşılmaz.</p>
+        <div class="ok" id="ok">WhatsApp açıldı, mesajınız hazır. Göndermeyi unutmayın.</div>
+      </form>
+    </div>
   </div>
 </section>
 </main>
 
-<footer><div class="wrap"><div class="top"><div class="bigl rv">Yücel<i>.</i></div><div class="col"><strong style="color:var(--ivory)">Yücel Dijital</strong><span>Şanlıurfa merkezli · Türkiye geneli</span><a href="tel:+905423968527">0542 396 85 27</a><a href="https://wa.me/905423968527" rel="noopener">WhatsApp</a></div></div><div class="bot"><span>© 2026 Yücel Dijital</span><span>Filmdeki kafe ve görseller temsilidir.</span></div></div></footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="assets/main.js?v=23"></script>
+<footer>
+  <div class="wrap">
+    <div class="g">
+      <div><a class="logo" href="#top"><i>Y</i>Yücel Dijital</a><p style="margin-top:14px;max-width:34ch">İşletmeler için web sitesi, mobil uygulama, karekod menü, e-ticaret ve otomasyon. Şanlıurfa merkezli, Türkiye geneline hizmet.</p></div>
+      <div><h4>Hizmetler</h4><ul><li><a href="#hizmetler">Kurumsal web sitesi</a></li><li><a href="#hizmetler">Mobil uygulama</a></li><li><a href="#hizmetler">Karekod menü</a></li><li><a href="#hizmetler">E-ticaret</a></li><li><a href="#hizmetler">İş otomasyonu</a></li></ul></div>
+      <div><h4>Kurumsal</h4><ul><li><a href="#neden">Neden Yücel Dijital</a></li><li><a href="#surec">Çalışma süreci</a></li><li><a href="#paketler">Paketler</a></li><li><a href="#sss">Sıkça sorulan sorular</a></li></ul></div>
+      <div><h4>İletişim</h4><ul><li><a href="tel:+905423968527">0542 396 85 27</a></li><li><a href="https://wa.me/905423968527" rel="noopener">WhatsApp</a></li><li>Şanlıurfa, Türkiye</li></ul></div>
+    </div>
+    <div class="bot"><span>© 2026 Yücel Dijital. Tüm hakları saklıdır.</span><span>Görseller temsilidir.</span></div>
+  </div>
+</footer>
+<a class="wa" href="https://wa.me/905423968527" rel="noopener" aria-label="WhatsApp ile yazın"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<script src="assets/main.js?v=30"></script>
 </body>
 </html>
